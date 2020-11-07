@@ -8,12 +8,9 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: ./manage.py test
-          name: Test
+          command: pip install -r requirements.txt
+          name: install requirements 
 
 workflows:
   main:
