@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - run:
-          command: pip install -r requirements.txt
-          name: install requirements 
+          command: pip install -r requirements.txt 
+          name: Test
 
 workflows:
   main:
